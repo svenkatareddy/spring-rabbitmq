@@ -41,8 +41,14 @@ publishing {
 	}
 	publications {
 		gpr(MavenPublication) {
-			from components.java
-			artifact bootJar
+			versionMapping {
+				usage('java-api') {
+					fromResolutionOf('runtimeClasspath')
+				}
+				usage('java-runtime') {
+					fromResolutionResult()
+				}
+			}
 		}
 	}
 }
