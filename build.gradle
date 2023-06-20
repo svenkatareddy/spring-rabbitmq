@@ -52,3 +52,16 @@ publishing {
 		}
 	}
 }
+
+//tasks.named("bootBuildImage") {
+//	imageName.set("ghcr.io/svenkatareddy/spring-rabbitmq")
+//	publish = true
+//	docker {
+//		publishRegistry {
+//			username = "user"
+//			password = "secret"
+//		}
+//	}
+//}
+
+
