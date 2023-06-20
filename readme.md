@@ -6,3 +6,5 @@ Run rabbitmq locally
 
 ![main](https://github.com/svenkatareddy/spring-rabbitmq/actions/workflows/main-push.yaml/badge.svg)
 
+on release it pushes artifacts. 
+on push to release branch it creates docker image. 
